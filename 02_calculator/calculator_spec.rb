@@ -87,11 +87,22 @@ describe "#multiply" do
     multiply(1, 2, 3, 4).should == 24
   end
 
+  it "multiplies several numbers" do
+    multiply(2,3).should == 6
+  end
+
+  it "multiplies several numbers" do
+    multiply(2,5,4).should == 40
+  end
+
 end
 
 describe "#power" do
   it "raises one number to the power of another number" do
     power(2, 3).should == 8
+  end
+  it "raises one number to the power of another number" do
+    power(2,2).should == 4
   end
 end
 
